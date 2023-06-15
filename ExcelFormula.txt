@@ -1,0 +1,46 @@
+After using 
+    =VALUESBYCOLORALL("purple","",D6:AJ21) and pasting values
+    OR
+    =VALUESBYCOLORALL("#34a853","",D6:AJ21)
+
+B1 = IF(isblank(D1),"",","&D1)
+    &IF(isblank(E1),"",","&E1)
+    &IF(isblank(F1),"",","&F1)
+    &IF(isblank(G1),"",","&G1)
+    &IF(isblank(H1),"",","&H1)
+    &IF(isblank(I1),"",","&I1)
+    &IF(isblank(J1),"",","&J1)
+    &IF(isblank(K1),"",","&K1)
+    &IF(isblank(L1),"",","&L1)
+    &IF(isblank(M1),"",","&M1)
+    &IF(isblank(N1),"",","&N1)
+    &IF(isblank(O1),"",","&O1)
+    &IF(isblank(P1),"",","&P1)
+    &IF(isblank(Q1),"",","&Q1)
+    &IF(isblank(R1),"",","&R1)
+    &IF(isblank(S1),"",","&S1)
+C1 = IF(isblank(U1),"",","&U1)
+    &IF(isblank(V1),"",","&V1)
+    &IF(isblank(W1),"",","&W1)
+    &IF(isblank(X1),"",","&X1)
+    &IF(isblank(Y1),"",","&Y1)
+    &IF(isblank(Z1),"",","&Z1)
+    &IF(isblank(AA1),"",","&AA1)
+    &IF(isblank(AB1),"",","&AB1)
+    &IF(isblank(AC1),"",","&AC1)
+    &IF(isblank(AD1),"",","&AD1)
+    &IF(isblank(AE1),"",","&AE1)
+    &IF(isblank(AF1),"",","&AF1)
+    &IF(isblank(AG1),"",","&AG1)
+    &IF(isblank(AH1),"",","&AH1)
+    &IF(isblank(AI1),"",","&AI1)
+    &IF(isblank(AJ1),"",","&AJ1) 
+// Left Panel Concat
+B20 = B2&B3&B4&B5&B6&B7&B8&B9&B10&B11&B12&B13&B14&B15&B16&B17
+// Right Panel Concat
+B21 = C2&C3&C4&C5&C6&C7&C8&C9&C10&C11&C12&C13&C14&C15&C16&C17
+// Total Concat
+B22 = B20&","&B21
+// Replace potential for double commas
+B23 = SUBSTITUTE(B22,",,",",")
+// RESULT = Final String (minus removing the leading comma and placing in brackets)
