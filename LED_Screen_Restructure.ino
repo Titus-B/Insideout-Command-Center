@@ -23,6 +23,7 @@ void display() {
 }
 
 void addDisplay(int vScreenArray[], CRGB vColor) {
+    // See https://forum.arduino.cc/t/crgb-color-as-a-function-argument/620376 for sample calls
     int i =0;
     Serial.print("addDisplay     ");
     int arraySize = sizeof(vScreenArray);
