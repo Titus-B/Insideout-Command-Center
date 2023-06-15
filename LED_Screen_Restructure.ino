@@ -17,13 +17,14 @@ void setup() {
 
 void display() {
     FastLED.show();
-    delay(150);
+    Serial.print("display     ");
+    delay(15000);
     FastLED.clear(true);
 }
 
 void addDisplay(int vScreenArray[], char vColor) {
     int i =0;
-    Serial.print(vColor);
+    Serial.print("addDisplay     ");
     int arraySize = sizeof(vScreenArray);
     for(i = 0; i < arraySize; i++){
         leds[vScreenArray[i]] = CRGB::Purple; //vColor;
@@ -36,15 +37,18 @@ void loop() {
     // FEAR - Words in Purple
         int screenArray = f2p;
         char color = "Purple";
+        Serial.print("f2p     ");
         addDisplay(screenArray, color);
         display();
 
     // FEAR - Spider and Ghost
         screenArray = f3p;
         color = "Purple";
+        Serial.print("f3p     ");
         addDisplay(screenArray, color);
         screenArray = f3r;
         color = "Red";
+        Serial.print("f3r     ");
         addDisplay(screenArray, color);
         display();
         
