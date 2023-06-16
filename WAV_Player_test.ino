@@ -1,3 +1,5 @@
+// Does not work for Arduino uno or mega
+
 /*
 
   Simple Audio Player for Arduino Zero
