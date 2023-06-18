@@ -34,7 +34,7 @@ void setup() {
     }
     Serial.println("initialization done.");
 
-    Serial.print("2 of 2 Initializing SD card...");
+    Serial.print("2 of 4 Initializing SD card...");
     if (!card.init(SPI_HALF_SPEED, chipSelect)) {
         Serial.println("initialization failed. Things to check:");
         Serial.println("* is a card inserted?");
@@ -42,7 +42,7 @@ void setup() {
         Serial.println("* did you change the chipSelect pin to match your shield or module?");
         while (1);
     } else {
-        Serial.println("Wiring is correct and a card is present.");
+        Serial.print("Wiring is correct and a card is present...");
     }
     // print the type of card
         Serial.print("Card type: ");
@@ -50,27 +50,45 @@ void setup() {
         Serial.print("... OR ");
         switch (card.type()) {
             case SD_CARD_TYPE_SD1:
-            Serial.println("SD1");
+            Serial.print("SD1");
             break;
             case SD_CARD_TYPE_SD2:
-            Serial.println("SD2");
+            Serial.print("SD2");
             break;
             case SD_CARD_TYPE_SDHC:
-            Serial.println("SDHC");
+            Serial.print("SDHC");
             break;
             default:
-            Serial.println("Unknown");
+            Serial.print("Unknown");
         }
 
-    Serial.println("initialization done.");
+    Serial.println("...initialization done.");
 
+    // Now we will try to open the 'volume'/'partition' - it should be FAT16 or FAT32
+    Serial.print("3 of 5 Explore Volume Formatting...");
+    if (!volume.init(card)) {
+        Serial.println("Could not find FAT16/FAT32 partition.\nMake sure you've formatted the card");
+        while (1);
+    }
+    uint32_t volumesize;
+    Serial.print("...Volume type is:    FAT");
+    Serial.print(volume.fatType(), DEC);
+    volumesize = volume.blocksPerCluster();    // clusters are collections of blocks
+    volumesize *= volume.clusterCount();       // we'll have a lot of clusters
+    volumesize /= 2;                           // SD card blocks are always 512 bytes (2 blocks are 1KB)
+    Serial.print("... Volume size (Kb):  ");
+    Serial.print(volumesize);
 
-    Serial.print("3 of 4 Select root directory...");
-    root = SD.open("/");
+    Serial.print("4 of 5 Select root directory...");
+    //root = SD.open("/");
+    root.openRoot(volume);
     Serial.println("done!");
     
-    Serial.print("4 of 4 Print Director...");
-    printDirectory(root, 0);
+    Serial.print("5 of 5 Print Root Directory...");
+    //printDirectory(root, 0);
+    // list all files in the card with date and size
+    root.ls(LS_R | LS_DATE | LS_SIZE);
+    root.close();
     Serial.println("done!");
 }
 
