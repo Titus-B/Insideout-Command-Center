@@ -57,6 +57,7 @@
         const CRGB cBlue = CRGB::Blue;
         const CRGB cRed = CRGB::Red;
         const CRGB cOrange = CRGB::Orange;
+
     // INPUT PINS
         int pinLW = 22; // Leg White
         int pinLY = 23; // Leg Yellow
@@ -85,6 +86,8 @@
         int pinSG = 46; // Stomach Green //
     // TRIGGERS 
         int conditionCode = 0; // Zero is Default
+    // VARIABLES
+        long randomNumber;
 
 void setup() {
     // Setup LEDS 
@@ -263,9 +266,28 @@ void loop() {
             break;
         default:
             // Default OK Words
-                addDisplay(default2, sizeofdefault2, cGreen);
-                display();
-      
+            randomNumber = random(0,4);
+            switch (randomNumber) {
+                case 0:    
+                    addDisplay(default2, sizeofdefault2, cGreen);
+                    break;
+                case 1:
+                    addDisplay(default2, sizeofdefault2, cYellow);
+                    break;
+                case 2:
+                    addDisplay(default2, sizeofdefault2, cPurple);
+                    break;
+                case 3:
+                    addDisplay(default2, sizeofdefault2, cBlue);
+                    break;
+                case 4:
+                    addDisplay(default2, sizeofdefault2, cRed);
+                    break;
+                default:
+                    addDisplay(default2, sizeofdefault2, cGreen);
+                    break;
+            }
+            display();
             break;
     }
     clearLEDs();
