@@ -52,6 +52,8 @@
         int pinSG = 46; // Stomach Green
     // TRIGGERS 
         int conditionCode = 0; // Zero is Default
+    // VARIABLES
+        long randomNumber;
 
 void setup() {
     // Setup LEDS 
@@ -256,7 +258,24 @@ void loop() {
         default:
             // Default OK Words
                 int screenArray = default2;
-                CRGB color = "Green";
+                randomNumber = random(0,4);
+                switch (randomNumber) {
+                    case 0: 
+                        color = "Green";
+                        break;
+                    case 1:
+                        color = "Yellow";
+                        break;
+                    case 2: 
+                        color = "Purple"
+                        break;
+                    case 3:
+                        color = "LightSkyBlue";
+                        break;
+                    case 4:
+                        color = "Red";
+                        break;
+                }
                 addDisplay(screenArray, CRGB::color);
                 display();
             break;
