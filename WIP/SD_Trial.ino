@@ -10,7 +10,7 @@
 // set up variables using the SD utility library functions:
 Sd2Card card;
 SdVolume volume;
-File root;
+SdFile root;
 const int chipSelect = 10;  //define CS pin
 
 //const char *wav_files[10] = { "1.wav", "2.wav", "3.wav", "4.wav", "5.wav", "6.wav", "7.wav", "8.wav", "9.wav", "10.wav" };
