@@ -109,4 +109,5 @@ void loop() {
             break;
     }
     Serial.println("done.");
+    delay(500);
 }
