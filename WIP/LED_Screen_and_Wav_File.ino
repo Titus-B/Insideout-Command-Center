@@ -1,12 +1,11 @@
-/// Working LEDs 
-///Testing Sound
+// Working LED only file
 
 // Setup
     #include <FastLED.h>
     #define NUM_LEDS 512
     #define DATA_PIN A0
     #include "SD.h"
-    #define SD_ChipSelectPin 10
+    #define SD_ChipSelectPin 53
     #include "TMRpcm.h"
     #include "SPI.h"
     TMRpcm sound;
@@ -103,7 +102,7 @@ void setup() {
     FastLED.setBrightness(10);
     FastLED.clear(true);
     Serial.println("done.");
-    sound.speakerPin=9;
+    sound.speakerPin=11;
     Serial.begin(9600);
     if(!SD.begin(SD_ChipSelectPin))
     {
