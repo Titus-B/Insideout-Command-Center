@@ -13,18 +13,29 @@ if(!SD.begin(SD_ChipSelectPin))
 {
   Serial.println("SD fail");
   return;
-} Serial.println("SD connected");
+} 
+//Serial.println("SD connected");
 sound.setVolume(7);
 sound.quality(0);
-Serial.print("TESTATM/Anger.wav");
-            // Check to see if the file exists:
-            if (SD.exists("TESTATM/Anger.wav")) {
-                Serial.println(" exists.");
-            } else {
-                Serial.println(" doesn't exist.");
-            }
+//Serial.print("TESTATM/Anger.wav");
+//            // Check to see if the file exists:
+//            if (SD.exists("TESTATM/Anger.wav")) {
+//                Serial.println(" exists.");
+//            } else {
+//                Serial.println(" doesn't exist.");
+//            }
+sound.play("TESTATM/Disgust.wav");
+delay(10000);
 sound.play("TESTATM/Anger.wav");
+delay(10000);
+sound.play("TESTATM/Fear.wav");
+delay(10000);
+sound.play("TESTATM/Joy.wav");
+delay(10000);
+sound.play("TESTATM/Sadness.wav");
+delay(10000);
 
+//Serial.print("audio is done");
 }
 
 void loop() {
