@@ -1,5 +1,5 @@
 #include "SD.h"
-#define SD_ChipSelectPin 10
+#define SD_ChipSelectPin 53 // 10 for Uno and 53 for Mega
 #include "TMRpcm.h"
 #include "SPI.h"
 
@@ -7,7 +7,7 @@ TMRpcm sound;
 
 void setup()
 {
-sound.speakerPin=9;
+sound.speakerPin=11; // 9 for Uno and 11 for Mega
 Serial.begin(9600);
 if(!SD.begin(SD_ChipSelectPin))
 {
