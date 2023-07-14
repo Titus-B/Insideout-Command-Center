@@ -1,6 +1,8 @@
 # Inside-Out Control Panel
 
-**Image Placeholder**
+<img src="https://github.com/Titus-B/Insideout/assets/58118976/8017f88d-bedc-4316-b44d-b08035c6b7b0" height="360">
+<img src="https://github.com/Titus-B/Insideout/assets/58118976/ebb498fc-270b-42fa-8fff-f92c4a95e103" height="360">
+
 
    **Created for LCBC Westshore At The Movies (ATM) 2023**
 
@@ -41,6 +43,8 @@
  **Control Panel:**
   
     This is the big box in the middle with the glass covering. Where all the indicator and blinking lights are.
+<img src="https://github.com/Titus-B/Insideout/assets/58118976/82dde02f-b15b-4a70-9cb1-b07258a3f114" height="280">
+<img src="https://github.com/Titus-B/Insideout/assets/58118976/f9f0d8d5-9d93-4818-8529-f78eb3617379" height="280">
 
 
 # Wiring of Button Panels and Connectors:
@@ -52,6 +56,9 @@
   **The Connector panels only have 2 wires, but they follow the same convention as the Button Panels.**
 
   (The connectors are all red)
+
+<img src="https://github.com/Titus-B/Insideout/assets/58118976/c2775380-47e4-4521-960d-ee4e4a4e8b29" height="300">
+<img src="https://github.com/Titus-B/Insideout/assets/58118976/47982619-09fc-491b-814f-5fc67a4bb8ba" height="300">
 
   
 # Wiring inside of the Control Panel:
@@ -143,8 +150,8 @@ https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Ar
      
       a) There is a simple plastic nut on the bottom of the button that can be tightened to stop the buttons from moving
 
-      b) Check to see if there is any lose hanging wire. If there is, the red wire goes into the bottom prong, the black wire 
-      goes into side with less plastic, and the colored wire goes out the long pointed side.
+      b) Check to see if there is any lose hanging wire. If there is, the red wire goes into the top prong sticking out the side
+      , the black wire goes into side with less plastic, and the colored wire goes out the bottom prong.
 
       c) Batteries should be taped inside otherwise it is 3 double A batteries.
 
@@ -166,12 +173,12 @@ https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Ar
       a)The stuff that is extraneous: The small speakers inside of the control panel and their wires, the transistor 
       and resistors, and one of the 12 volt power supply.
 
-      b) Random Blinking Lights (the two side panels)
+      b) Random Blinking LED (the two side panels)
       : These are connnected to the Arduino Uno (the smaller one) in the front of the control panel 
       (see Wiring of Button Panels and Connectors)
 
 
-      c) Button Controlled Lights (Central Panel)
+      c) Button Controlled LED (Central Panel)
       : These are individually connected to the Arduino Mega (the bigger one) in the back of the control panel. 
       (See Wiring inside of the Control Panel)
       
