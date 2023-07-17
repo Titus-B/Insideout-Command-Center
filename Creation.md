@@ -14,13 +14,11 @@ https://github.com/Titus-B/Insideout/assets/58118976/4301a380-c3ee-4f20-9ca6-70b
 
 We tested the buttons out to get an idea of how we wanted them to work and determined we wanted them to light up when pressed.
 
-<img src="Assets/LED_Test_1.JPG" height="300">
-<img src="Assets/LED_Test_2.JPG" height="300">
+<img src="Assets/LED_Test_1.JPG" height="300"> <img src="Assets/LED_Test_2.JPG" height="300">
 
 Then LEDs were then tested to determine if they would work as planned as fake buttons. 
 
-<img src="Assets/Panels_without_Electronics_1.JPG" height="300">
-<img src="Assets/Button_Panels.JPG" height="300">
+<img src="Assets/Panels_without_Electronics_1.JPG" height="300"> <img src="Assets/Button_Panels.JPG" height="300">
 
 Then using butcher block paper we cutout full scale panels that the buttons would sit on.
 These were then glueds onto a 3/4 inch ply wood and cutout.
@@ -37,9 +35,7 @@ Then the edge of the tables were planned and made by steaming.
 
 1" by 3" was used for the sides and 0.25" by 3" for the corners. The 0.25" by 3" was used because the 1" by 3" were not bending enough.
 
-<img src="Assets\Failed_Corner_Glue.JPG" height="300">
-<img src="Assets\Final_Corner_Glued_1.JPG" height="300">
-<img src="Assets\Sides_Glued.JPG" height="300">
+<img src="Assets\Failed_Corner_Glue.JPG" height="300"> <img src="Assets\Final_Corner_Glued_1.JPG" height="300"> <img src="Assets\Sides_Glued.JPG" height="300">
 
 The wiring inside the table was then added. 
 
@@ -47,8 +43,7 @@ The wiring inside the table was then added.
 
 Then the top was then glued on.
 
-<img src="Assets\Table_with_top_being_glued_3.jpg" height="300">
-<img src="Assets\Table_with_top.jpg" height="300">
+<img src="Assets\Table_with_top_being_glued_3.jpg" height="300"> <img src="Assets\Table_with_top.jpg" height="300">
 
 The edges of the table were then routed one last time to ensure that the edges were smooth. Then the final act of wiring everything up was left.
 
@@ -60,11 +55,7 @@ With all of the LEDs complete all that was left was to figure out if we could ge
 
 The first step was to get a working prototype, which was done on the Arduino Uno.
 
-<img src="Assets\Audio_Arduino_Wiring.JPG" height="300">
-
-<img src="Assets\Audio_SD_Wiring.JPG" height="300">
-
-<img src="Assets\Audio_Wiring.JPG" height="300">
+<img src="Assets\Audio_Arduino_Wiring.JPG" height="300"> <img src="Assets\Audio_SD_Wiring.JPG" height="300">  <img src="Assets\Audio_Wiring.JPG" height="300">
 
 Once we could get the sound to play on the small speakers with the Uno we transfered the code to the Mega and put in the speakers. 
 
