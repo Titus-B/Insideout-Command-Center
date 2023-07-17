@@ -7,6 +7,8 @@
 
   **The Control Panel from the Disney and Pixar Film "Inside Out"**
 
+  **The project was completed in collaboration between Lean King and The Bunch Family**
+
 # Terminology:
 **Button Panels:**
   Leg, Pentagon, Brain, Heart, and Stomach.
