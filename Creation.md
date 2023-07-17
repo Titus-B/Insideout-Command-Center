@@ -51,7 +51,7 @@ Details on how this was done can be found in the [Readme](https://github.com/Tit
 
 With all of the LEDs complete all that was left was to figure out if we could get audio to work.
 
-<img src="Assets\Table.JPG" height="300">
+<img src="Assets\Entire_Table.JPG" height="300">
 
 The first step was to get a working prototype, which was done on the Arduino Uno.
 
@@ -61,7 +61,7 @@ Once we could get the sound to play on the small speakers with the Uno we transf
 
 There we had a few issues and after some trouble shooting and changing where wires connected to the Mega it started to work. 
 
-Here we ran into the issue of the 2 small speakers not being powerful enough. so we upgraded to a larger speaker hidden in the base and powering it with an amp.
+Here we ran into the issue of the 2 small speakers not being loud enough. so we upgraded to a larger speaker hidden in the base and powering it with an amp.
 
 This was much louder, but still quieter than the ambiant noise in the atrium of the Chuch.
 
