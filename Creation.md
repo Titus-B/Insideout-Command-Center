@@ -52,8 +52,7 @@ These panels then had holes drilled for the buttons, the edges routed so that th
 
 
 
-<img src="Assets/Panels_Painted.JPG" height="300">
-<img src="Assets/Colors.JPG" height="300">
+<img src="Assets/Panels_Painted.JPG" height="300"> <img src="Assets/Colors.JPG" height="300">
 
 
 After all the panels had all of the cutting, sanding, and routing done they were painted Unique Gray.
@@ -89,13 +88,13 @@ The wiring inside the table was then added.
 Then the top was then glued on.
 
 
+The edges of the table were then routed one last time to ensure that the edges were smooth. Then the final act of wiring everything up was left.
+
+
 <img src="Assets/Colors.JPG" height="300">
 
 
 Then it was painted Snowbound
-
-
-The edges of the table were then routed one last time to ensure that the edges were smooth. Then the final act of wiring everything up was left.
 
 
 Details on how this was done can be found in the [Readme](https://github.com/Titus-B/Insideout/blob/main/Readme.md).
@@ -119,7 +118,7 @@ Once we could get the sound to play on the small speakers with the Uno we transf
 There we had a few issues and after some trouble shooting and changing where wires connected to the Mega it started to work.
 
 
-Here we ran into the issue of the 2 small speakers not being loud enough. so we upgraded to a larger speaker hidden in the base and powering it with an amp.
+Then we ran into the issue of the 2 small speakers not being loud enough. so we upgraded to a larger speaker hidden in the base and powering it with an amp.
 
 
 This was much louder, but still quieter than the ambiant noise in the atrium of the Church.
