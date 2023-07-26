@@ -112,6 +112,9 @@ The first step was to get a working prototype, which was done on the Arduino Uno
 <img src="Assets\Audio_Arduino_Wiring.JPG" height="300"> <img src="Assets\Audio_SD_Wiring.JPG" height="300">  <img src="Assets\Audio_Wiring.JPG" height="300">
 
 
+The audio files on the SD card were Wav files with a PCM format, a sampling rate of 16.0 kHz, a bit depth of 8 bit, and mono channeled.
+
+
 Once we could get the sound to play on the small speakers with the Uno we transfered the code to the Mega and put in the speakers.
 
 
