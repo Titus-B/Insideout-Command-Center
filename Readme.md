@@ -75,7 +75,7 @@
     Red/+    : Red wire           |           Black/-  : Black wire
   
 # Code:
-  To upload code to the arduino you can follow these [instructions](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE.) by Arduino.
+  To upload code to the arduino you can follow these [instructions](https://support.arduino.cc/hc/en-us/articles/4733418441116-Upload-a-sketch-in-Arduino-IDE) by Arduino.
   
   **The Arduino Mega has the Screen_and_Sound.Ino uploaded to it.**
   (The larger one)
